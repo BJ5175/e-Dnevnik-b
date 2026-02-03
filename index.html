@@ -229,6 +229,11 @@
                     window.location.href = 'nastavnik.html';
                     return;
                 }
+                if (user === 'Prof.Zoran' && pass === '4428') {
+                    localStorage.setItem('currentUser', 'Prof.Zoran');
+                    window.location.href = 'nastavnik.html';
+                    return;
+                }
 
                 // Učenik Login
                 if (bazaUcenika[user] && pass === 'ucenik123') {
